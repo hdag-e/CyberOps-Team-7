@@ -16,11 +16,11 @@ To establish a security operations capability for a simulated enterprise network
 * **Playbook & Documentation Lead: Hasan Dagdelen** 
 
 ## Repository Structure
-* `/01_configurations/` - Master `.pkt` Packet Tracer files and exported running configs.
-* `/02_documentation/` - Network addressing plan, topology diagrams, and subnet specs.
-* `/03_event_catalogue/` - 15+ catalogued security events, benign vs. malicious definitions, and triage workflows.
-* `/04_evidence_and_testing/` - Test logs (T-01 through T-15), screenshots, and clock-skew proof.
-* `/05_incidents_and_correlation/` - Manual correlation workbook and 3 staged incident reconstructions.
-* `/06_playbooks/` - NIST SP 800-61 playbooks, MITRE ATT&CK mappings, and gap assessment.
-* `/07_meetings_and_pm/` - Sprint records, meeting notes, and Scrum logs.
-* `/08_final_deliverables/` - Final project report, presentation slides, and video links.
+* `/configurations/` - Master `.pkt` Packet Tracer files and exported running configs.
+* `/documentation/` - Network addressing plan, topology diagrams, and subnet specs.
+* `/event_catalogue/` - 15+ catalogued security events, benign vs. malicious definitions, and triage workflows.
+* `/evidence_and_testing/` - Test logs (T-01 through T-15), screenshots, and clock-skew proof.
+* `/incidents_and_correlation/` - Manual correlation workbook and 3 staged incident reconstructions.
+* `/playbooks/` - NIST SP 800-61 playbooks, MITRE ATT&CK mappings, and gap assessment.
+* `/meetings_and_pm/` - Sprint records, meeting notes, and Scrum logs.
+* `/final_deliverables/` - Final project report, presentation slides, and video links.
