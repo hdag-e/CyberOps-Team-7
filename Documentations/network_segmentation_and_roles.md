@@ -1,4 +1,4 @@
-# Network Segmentation and Device Role Specification (SCRUM-75)
+# Network Segmentation and Device Role Specification (SCRUM-75) 
 
 ## 1. Overview & Purpose
 This document defines the functional roles and trust segmentation for the CYBEROPS-07 enterprise baseline network topology in Cisco Packet Tracer. Segmentation is structured around trust levels to ensure lateral movement produces observable security events (e.g., access control denials and authentication failures).
