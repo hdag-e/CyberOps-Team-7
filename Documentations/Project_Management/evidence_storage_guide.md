@@ -45,7 +45,7 @@ Each sprint uses the following categories:
 
 Place completed test records alongside their supporting evidence. Place artifact-specific peer-review records alongside the reviewed artifact or its supporting evidence, and link them from the artifact.
 
-These folders can be added to each sprint as needed for that sprints requirements
+These folders can be added to each sprint as needed for that sprints requirements as well as any additional folders not listed here.
 
 ## 4. File Naming
 
