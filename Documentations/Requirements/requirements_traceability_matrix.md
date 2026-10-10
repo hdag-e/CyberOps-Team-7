@@ -32,10 +32,10 @@ This document establishes end-to-end traceability across the CYBEROPS-07 project
 | | **SCRUM-85** | Configure baseline device interfaces and addressing | Appx D & E | [Rtr-Edge ip assignment.png](../../Evidence/Sprint_1/network_evidence/Rtr-Edge%20ip%20assignment.png) | :white_check_mark: Done |
 | | **SCRUM-86** | Configure baseline routing and switching behavior | Appx D & E | [inter-vlan routing.png](../../Evidence/Sprint_1/network_evidence/inter-vlan%20routing.png) | :white_check_mark: Done |
 | | **SCRUM-87** | Verify topology configuration against the approved design | Appx D | [SCRUM-26_MasterTopology.png](../../Evidence/Sprint_1/network_evidence/SCRUM-26_MasterTopology.png) | :white_check_mark: Done |
-| **SCRUM-27** | | **Verify baseline network connectivity** | Test T-01 | N/A (Parent Story) | In Progress |
-| | **SCRUM-88** | Define baseline connectivity test matrix | Test T-01 | Evidence/Sprint_1/<br>connectivity_tests/ | In Progress |
+| **SCRUM-27** | | **Verify baseline network connectivity** | Test T-01 | N/A (Parent Story) | :white_check_mark: Done |
+| | **SCRUM-88** | Define baseline connectivity test matrix | Test T-01 | [connectivity_test_matrix.md](connectivity_test_matrix.md) | :white_check_mark: Done |
 | | **SCRUM-89** | Execute baseline connectivity tests | Test T-01 | [PC-admin1 ping test.png](../../Evidence/Sprint_1/network_evidence/PC-admin1%20ping%20test.png) | :white_check_mark: Done |
-| | **SCRUM-90** | Document and resolve baseline connectivity issues | Test T-01 | Evidence/Sprint_1/<br>baseline_verification/ | In Progress |
+| | **SCRUM-90** | Document and resolve baseline connectivity issues | Test T-01 | [troubleshooting_log.md](troubleshooting_log.md) | :white_check_mark: Done |
 | **SCRUM-28** | | **Establish project evidence and documentation structure** | Quality Assurance | N/A (Parent Story) | :white_check_mark: Done |
 | | **SCRUM-91** | Establish project evidence repository structure | QA Standards | Evidence/ Directory Tree | :white_check_mark: Done |
 | | **SCRUM-92** | Define project documentation standards and templates | QA Standards | Documentations/Templates/ | :white_check_mark: Done |
