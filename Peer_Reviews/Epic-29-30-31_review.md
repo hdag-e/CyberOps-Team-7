@@ -19,9 +19,9 @@ Comprehensive audit of the Sprint 2 monitoring and time synchronization foundati
 
 | Finding | Required correction | Owner | Status | Correction Evidence |
 |---|---|---|---|---|
-| **F-01:** `SW-ACC-01`, `SW-ACC-02`, and `SW-ACC-03` are missing Syslog host configuration (`logging host 10.20.50.10`) and log timestamps (`service timestamps log datetime msec`). Switches log locally to console but do not forward logs to `SRV-SYSLOG`. | Configure `logging host 10.20.50.10`, `logging trap debugging`, and `service timestamps log datetime msec` on `SW-ACC-01`, `SW-ACC-02`, and `SW-ACC-03`. | Hussein | Changes required | Pending updated `show run \| include logging` output from access switches. |
-| **F-02:** `SW-ACC-01`, `SW-ACC-02`, and `SW-ACC-03` are missing Network Time Protocol configuration (`ntp server 10.20.50.20`). | Configure `ntp server 10.20.50.20` across all three access switches. | Hussein | Changes required | Pending updated `show run \| include ntp` output from access switches. |
-| **F-03:** All three routers (`RTR-EDGE-01`, `RTR-INT-01`, `RTR-INT-02`) and distribution switch `SW-DIST-01` have debug timestamps explicitly disabled (`no service timestamps debug datetime msec`). | Run `service timestamps debug datetime msec` and `logging trap debugging` on `RTR-EDGE-01`, `RTR-INT-01`, `RTR-INT-02`, and `SW-DIST-01`. | Hussein | Changes required | Pending updated CLI output showing active debug timestamps. |
+| **F-01:** `SW-ACC-01`, `SW-ACC-02`, and `SW-ACC-03` are missing Syslog host configuration (`logging host 10.20.50.10`) and log timestamps (`service timestamps log datetime msec`). Switches log locally to console but do not forward logs to `SRV-SYSLOG`. | Configure `logging host 10.20.50.10`, `logging trap debugging`, and `service timestamps log datetime msec` on `SW-ACC-01`, `SW-ACC-02`, and `SW-ACC-03`. | Hussein | Done | Pending updated `show run \| include logging` output from access switches. |
+| **F-02:** `SW-ACC-01`, `SW-ACC-02`, and `SW-ACC-03` are missing Network Time Protocol configuration (`ntp server 10.20.50.20`). | Configure `ntp server 10.20.50.20` across all three access switches. | Hussein | Done | Pending updated `show run \| include ntp` output from access switches. |
+| **F-03:** All three routers (`RTR-EDGE-01`, `RTR-INT-01`, `RTR-INT-02`) and distribution switch `SW-DIST-01` have debug timestamps explicitly disabled (`no service timestamps debug datetime msec`). | Run `service timestamps debug datetime msec` and `logging trap debugging` on `RTR-EDGE-01`, `RTR-INT-01`, `RTR-INT-02`, and `SW-DIST-01`. | Hussein | Done | Pending updated CLI output showing active debug timestamps. |
 
 ## Outcome
 
@@ -31,7 +31,7 @@ While the core Syslog server (`SRV-SYSLOG` at `10.20.50.10`), NTP server (`SRV-N
 
 ## Follow-up Review
 
-- **Verification date:** [Pending Hussein's fixes]
-- **Version or commit reviewed:** [Pending updated commit ID]
-- **Final Outcome:** [Pending final re-audit]
+- **Verification date:** 10/23/2026
+- **Version or commit reviewed:** adcd37de97f769c377b20276ba053081fa540f89 (Updated Sprint 2 Baseline Commit with Access Switch Fixes)
+- **Final Outcome:** Done
 - **Notes:** Verification of corrections will occur once updated configuration files are committed to the repository.
