@@ -1,0 +1,1 @@
+Hussein - Epic 29, 30, 31 (Jira Scrum 29, 30, 31) - Setting and Initializing Network Time Synchronization (NTP) and Logging Server (SYSLOG): https://drive.google.com/drive/folders/1B18ux3swaw-aUV-_goST_IQLPCGm8uCu?usp=drive_link
