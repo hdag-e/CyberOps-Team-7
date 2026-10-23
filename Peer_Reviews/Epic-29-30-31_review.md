@@ -1,7 +1,7 @@
 # Peer Review
 
-- **Artifact reviewed:** Centralized Logging & Network Time Synchronization Baseline (`CYBEROPS07_Monitoring_Baseline_Review.pkt`, running configs, Syslog/NTP server evidence)
-- **Artifact link:** `https://github.com/CyberOps-Team-7/CYBEROPS-07/blob/main/Topology/CYBEROPS07_Monitoring_Baseline_Review.pkt`
+- **Artifact reviewed:** Centralized Logging & Network Time Synchronization Baseline (`CYBEROPS07_Configuration_v1_0.pkt`, running configs, Syslog/NTP server evidence)
+- **Artifact link:** `[https://github.com/CyberOps-Team-7/CYBEROPS-07/blob/main/Topology/CYBEROPS07_Configuration_v1_0.pkt.pkt](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Packet_Tracer/Configurations/CYBEROPS07_Configuration_v1_0.pkt)`
 - **Version or commit reviewed:** `c8f12a4` (Sprint 2 Infrastructure Review Commit)
 - **Related Jira issue:** `SCRUM-29`, `SCRUM-30`, `SCRUM-31` (Parent Epics: `SCRUM-5`, `SCRUM-6`)
 - **Reviewer:** Member 3 (Validation & Coverage Lead)
