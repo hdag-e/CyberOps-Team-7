@@ -67,7 +67,7 @@ Executed disable to enter user EXEC mode on RTR-EDGE-01, ran the enable command,
 
 ### Log Appearance
 ```text
-*%Bad Secrets
+%Bad Secrets
 ```
 
 ## Explanation
