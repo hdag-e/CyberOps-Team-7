@@ -67,7 +67,7 @@ Executed disable to enter user EXEC mode on RTR-EDGE-01, ran the enable command,
 
 ### Log Appearance
 ```text
-*Oct 24 14:22:10.012: %SYS-4-CONFIG_P: Access to privileged exec mode failed from vty0 (10.20.50.100)
+*%Bad Secrets
 ```
 
 ## Explanation
