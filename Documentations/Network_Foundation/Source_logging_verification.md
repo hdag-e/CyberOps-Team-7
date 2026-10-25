@@ -6,7 +6,7 @@
 - Child Jira issue: [SCRUM-111](https://njit-team-lbmxd47l.atlassian.net/browse/SCRUM-111)
 - Related acceptance test: T-01
 - Packet Tracer file/version: CYBEROPS07_Configuration_v1_2.pkt, Packet Tracer Version 9.0.1.0858
-- Monitoring inventory: [Monitoring Source Inventory](Network_Foundation/Monitoring_Source_inventroy.md)
+- Monitoring inventory: [Monitoring Source Inventory](../Network_Foundation/Monitoring_Source_inventroy.md)
 - Central Syslog server: 10.20.50.10
 
 ## Objective
