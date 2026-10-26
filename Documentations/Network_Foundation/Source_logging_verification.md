@@ -20,13 +20,13 @@ This verification covers the tested event types only.
 
 | Source | Event tested | Central log observed? | Status | Reason / limitations | Evidence |
 |---|---|---|---|---|---|
-| RTR-EDGE-01 | Interface state change | Yes | Verified | Central log showed time, host IP, and message | [Router CLI Output](../Evidence/Sprint_2/baseline_verification/test_rtr_edge_01_interface_change_20261025.PNG), [Central Syslog Entry](../Evidence/Sprint_2/baseline_verification/test_rtr_edge_01_syslog_recieved_20261025.PNG)|
-| RTR-INT-01 | Interface state change | Yes | Verified | Central log showed time, host IP, and message | [Router CLI Output](../Evidence/Sprint_2/baseline_verification/test_rtr_int_01_interface_change_20261025.PNG), [Central Syslog Entry](../Evidence/Sprint_2/baseline_verification/test_rtr_int_01_syslog_recieved_20261025.PNG)|
-| RTR-INT-02 | Interface state change | Yes | Verified | Central log showed time, host IP, and message | [Router CLI Output](../Evidence/Sprint_2/baseline_verification/test_rtr_int_02_interface_change_20261025.PNG), [Central Syslog Entry](../Evidence/Sprint_2/baseline_verification/test_rtr_int_02_syslog_recieved_20261025.PNG)|
-| SW-DIST-01 | Configuration change | Yes | Verified | Configuration-change notification received centrally. Interface state changes was also tested, but no corresponding message was observed.| [Switch CLI Output](../Evidence/Sprint_2/baseline_verification/test_sw_dist_01_config_change_20261025.PNG), [Central Syslog Entry](../Evidence/Sprint_2/baseline_verification/test_sw_dist_01_syslog_recieved_20261025.PNG)|
-| SW-ACC-01 | Configuration change | Yes | Verified | Configuration-change notification received centrally. Interface state changes was also tested, but no corresponding message was observed.| [Switch CLI Output](../Evidence/Sprint_2/baseline_verification/test_sw_acc_01_config_change_20261025.PNG), [Central Syslog Entry](../Evidence/Sprint_2/baseline_verification/test_sw_acc_01_syslog_recieved_20261025.PNG)|
-| SW-ACC-02 | Configuration change | Yes | Verified | Configuration-change notification received centrally. Interface state changes was also tested, but no corresponding message was observed.| [Switch CLI Output](../Evidence/Sprint_2/baseline_verification/test_sw_acc_02_config_change_20261025.PNG), [Central Syslog Entry](../Evidence/Sprint_2/baseline_verification/test_sw_acc_02_syslog_recieved_20261025.PNG)|
-| SW-ACC-03 | Configuration change | Yes | Verified | Configuration-change notification received centrally. Interface state changes was also tested, but no corresponding message was observed.| [Switch CLI Output](../Evidence/Sprint_2/baseline_verification/test_sw_acc_03_config_change_20261025.PNG), [Central Syslog Entry](../Evidence/Sprint_2/baseline_verification/test_sw_acc_03_syslog_recieved_20261025.PNG)|
+| RTR-EDGE-01 | Interface state change | Yes | Verified | Central log showed time, host IP, and message | [Router CLI Output](../../Evidence/Sprint_2/baseline_verification/test_rtr_edge_01_interface_change_20261025.PNG), [Central Syslog Entry](../../Evidence/Sprint_2/baseline_verification/test_rtr_edge_01_syslog_recieved_20261025.PNG)|
+| RTR-INT-01 | Interface state change | Yes | Verified | Central log showed time, host IP, and message | [Router CLI Output](../../Evidence/Sprint_2/baseline_verification/test_rtr_int_01_interface_change_20261025.PNG), [Central Syslog Entry](../../Evidence/Sprint_2/baseline_verification/test_rtr_int_01_syslog_recieved_20261025.PNG)|
+| RTR-INT-02 | Interface state change | Yes | Verified | Central log showed time, host IP, and message | [Router CLI Output](../../Evidence/Sprint_2/baseline_verification/test_rtr_int_02_interface_change_20261025.PNG), [Central Syslog Entry](../../Evidence/Sprint_2/baseline_verification/test_rtr_int_02_syslog_recieved_20261025.PNG)|
+| SW-DIST-01 | Configuration change | Yes | Verified | Configuration-change notification received centrally. Interface state changes was also tested, but no corresponding message was observed.| [Switch CLI Output](../../Evidence/Sprint_2/baseline_verification/test_sw_dist_01_config_change_20261025.PNG), [Central Syslog Entry](../../Evidence/Sprint_2/baseline_verification/test_sw_dist_01_syslog_recieved_20261025.PNG)|
+| SW-ACC-01 | Configuration change | Yes | Verified | Configuration-change notification received centrally. Interface state changes was also tested, but no corresponding message was observed.| [Switch CLI Output](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_01_config_change_20261025.PNG), [Central Syslog Entry](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_01_syslog_recieved_20261025.PNG)|
+| SW-ACC-02 | Configuration change | Yes | Verified | Configuration-change notification received centrally. Interface state changes was also tested, but no corresponding message was observed.| [Switch CLI Output](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_02_config_change_20261025.PNG), [Central Syslog Entry](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_02_syslog_recieved_20261025.PNG)|
+| SW-ACC-03 | Configuration change | Yes | Verified | Configuration-change notification received centrally. Interface state changes was also tested, but no corresponding message was observed.| [Switch CLI Output](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_03_config_change_20261025.PNG), [Central Syslog Entry](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_03_syslog_recieved_20261025.PNG)|
 
 ## Status Definitions
 
@@ -98,8 +98,8 @@ The status is verified because the device produced a log that was sent and colle
 
 ### Evidence
 
-- [Generating action and CLI output](../Evidence/Sprint_2/baseline_verification/test_rtr_edge_01_interface_change_20261025.PNG)
-- [Centralized log entry](../Evidence/Sprint_2/baseline_verification/test_rtr_edge_01_syslog_recieved_20261025.PNG)
+- [Generating action and CLI output](../../Evidence/Sprint_2/baseline_verification/test_rtr_edge_01_interface_change_20261025.PNG)
+- [Centralized log entry](../../Evidence/Sprint_2/baseline_verification/test_rtr_edge_01_syslog_recieved_20261025.PNG)
 
 ### Limitations / Follow-up
 
@@ -166,8 +166,8 @@ The status is verified because the device produced a log that was sent and colle
 
 ### Evidence
 
-- [Generating action and CLI output](../Evidence/Sprint_2/baseline_verification/test_rtr_int_01_interface_change_20261025.PNG)
-- [Centralized log entry](../Evidence/Sprint_2/baseline_verification/test_rtr_int_01_syslog_recieved_20261025.PNG)
+- [Generating action and CLI output](../../Evidence/Sprint_2/baseline_verification/test_rtr_int_01_interface_change_20261025.PNG)
+- [Centralized log entry](../../Evidence/Sprint_2/baseline_verification/test_rtr_int_01_syslog_recieved_20261025.PNG)
 
 ### Limitations / Follow-up
 
@@ -234,8 +234,8 @@ The status is verified because the device produced a log that was sent and colle
 
 ### Evidence
 
-- [Generating action and CLI output](../Evidence/Sprint_2/baseline_verification/test_rtr_int_02_interface_change_20261025.PNG)
-- [Centralized log entry](../Evidence/Sprint_2/baseline_verification/test_rtr_int_02_syslog_recieved_20261025.PNG)
+- [Generating action and CLI output](../../Evidence/Sprint_2/baseline_verification/test_rtr_int_02_interface_change_20261025.PNG)
+- [Centralized log entry](../../Evidence/Sprint_2/baseline_verification/test_rtr_int_02_syslog_recieved_20261025.PNG)
 
 ### Limitations / Follow-up
 
@@ -304,8 +304,8 @@ The status is verified because the device produced a log that was sent and colle
 
 ### Evidence
 
-- [Generating action and CLI output](../Evidence/Sprint_2/baseline_verification/test_sw_dist_01_config_change_20261025.PNG)
-- [Centralized log entry](../Evidence/Sprint_2/baseline_verification/test_sw_dist_01_syslog_recieved_20261025.PNG)
+- [Generating action and CLI output](../../Evidence/Sprint_2/baseline_verification/test_sw_dist_01_config_change_20261025.PNG)
+- [Centralized log entry](../../Evidence/Sprint_2/baseline_verification/test_sw_dist_01_syslog_recieved_20261025.PNG)
 
 ### Limitations / Follow-up
 
@@ -372,8 +372,8 @@ The status is verified because the device produced a log that was sent and colle
 
 ### Evidence
 
-- [Generating action and CLI output](../Evidence/Sprint_2/baseline_verification/test_sw_acc_01_config_change_20261025.PNG)
-- [Centralized log entry](../Evidence/Sprint_2/baseline_verification/test_sw_acc_01_syslog_recieved_20261025.PNG)
+- [Generating action and CLI output](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_01_config_change_20261025.PNG)
+- [Centralized log entry](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_01_syslog_recieved_20261025.PNG)
 
 ### Limitations / Follow-up
 
@@ -441,8 +441,8 @@ The status is verified because the device produced a log that was sent and colle
 
 ### Evidence
 
-- [Generating action and CLI output](../Evidence/Sprint_2/baseline_verification/test_sw_acc_02_config_change_20261025.PNG)
-- [Centralized log entry](../Evidence/Sprint_2/baseline_verification/test_sw_acc_02_syslog_recieved_20261025.PNG)
+- [Generating action and CLI output](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_02_config_change_20261025.PNG)
+- [Centralized log entry](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_02_syslog_recieved_20261025.PNG)
 
 ### Limitations / Follow-up
 
@@ -510,8 +510,8 @@ The status is verified because the device produced a log that was sent and colle
 
 ### Evidence
 
-- [Generating action and CLI output](../Evidence/Sprint_2/baseline_verification/test_sw_acc_03_config_change_20261025.PNG)
-- [Centralized log entry](../Evidence/Sprint_2/baseline_verification/test_sw_acc_03_syslog_recieved_20261025.PNG)
+- [Generating action and CLI output](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_03_config_change_20261025.PNG)
+- [Centralized log entry](../../Evidence/Sprint_2/baseline_verification/test_sw_acc_03_syslog_recieved_20261025.PNG)
 
 ### Limitations / Follow-up
 
