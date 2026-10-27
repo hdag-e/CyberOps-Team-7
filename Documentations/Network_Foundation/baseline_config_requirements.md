@@ -58,7 +58,7 @@ vlan 20
 vlan 30
  name Servers
 vlan 50
- name Logging_NTP
+ name SYSLOG_VLAN
 vlan 99
  name Management
 vlan 500
