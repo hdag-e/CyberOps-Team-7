@@ -91,3 +91,21 @@ The shutdown event reaches the collector and is displayed with time stamp markin
 - Matching centralized log with CLI output
 - Completed event catalogue record
 - Confirmation of restoration to original state
+
+## 11. Execution Results
+- Executed by: Eric Lindemulder
+- Execution date/time and timezone: 10/28/2026 2:11 AM EST
+- Procedure Followed / Deviations: no deviations followed the procedure as it was laid out
+- Actual local output: %LINK-5-CHANGED: Interface GigabitEthernet0/0/2, changed state to administratively down
+- Central received: Yes
+- Source identifier displayed: IP address 10.20.252.13
+- Source attribution: IP in the centralized log matching the IP of the device the event was generated on
+- Timestamp Displayed: 10.28.2026 02:11:09.097 AM
+- Event Code and Details: Link-5-changed GigabitEthernet 0/0/2 changed state to administratively down
+- Failed steps / unexpected behavior: None
+- Limitations / cause unconfirmed: None
+- Original interface state restored: Yes
+- Result: Pass
+- Initial state evidence: [Router CLI output](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_rtr_int_02_initial_state_20261028.PNG)
+- Generation-action evidence: [Router CLI Output](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_rtr_int_02_endpoint_test_cli_20261028.PNG)
+- Centralized-log evidence: [Syslog server](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_syslog_server_endpoint_test_20261028.PNG)
