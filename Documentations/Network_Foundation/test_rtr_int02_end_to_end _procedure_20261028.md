@@ -9,7 +9,7 @@
  -  Source: RTR-INT-92
  -  Interface: GigabitEthernet 0/0/2
  -  Event: Interface state change to administratively shut down
- -  Event catalogue ID: TBD
+ -  Event catalogue ID: EVT-04
  -  Related event record: not yet available
  -  Central logging destination: 10.20.50.10
 
@@ -68,17 +68,17 @@ The message will be identifiable to the RTR-INT-02 by the IP address in the sysl
 
 ## 8. Event Catalogue Fields to Validate
 
-- Event ID and name.
-- Contributor, Jira issue, and test date/time.
-- Source device and Packet Tracer file/version.
-- Evidence status: Observed, only after successful execution.
-- Generating action.
-- Actual centralized log and evidence links.
-- Credible benign explanation.
-- Credible malicious explanation.
-- Evidence needed to distinguish those explanations.
-- Classification using the team's taxonomy.
-- Limitations of the observed log.
+- Event ID and name. EVT- 04 Interface State change
+- Contributor, Jira issue, and test date/time. Eric Lindemulder
+- Source device and Packet Tracer file/version. RTR-INT-02, [CYBEROPS07_Configuration_v1_2.pkt](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Packet_Tracer/Configurations/CYBEROPS07_Configuration_v1_2.pkt), 9.0.1.0858
+- Evidence status: Observed
+- Generating action: Changing the interface state to administratively down 
+- Actual centralized log and evidence links: [Router CLI Output](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_rtr_int_02_endpoint_test_cli_20261028.PNG), [Syslog server](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_syslog_server_endpoint_test_20261028.PNG)
+- Credible benign explanation: Admin user logs into a switch and intentional shuts down  and unused interface as part of network maintenance or configuration
+- Credible malicious explanation: an attacker with administrative access deliberate disabling the interface to cause disruption in the network (because the port is unused no disruption was caused)
+- Evidence needed to distinguish those explanations: Admin login records and command history. Compare the account, access source, time and action
+- Classification using the team's taxonomy: Team Taxonomy not yet available
+- Limitations of the observed log: Log identifies the interface and the state it was changed to as well as the source it came from and the time/date. However it does not record what account changed the state or for what purpose
 
 ## 9. Expected Event
 
@@ -109,3 +109,13 @@ The shutdown event reaches the collector and is displayed with time stamp markin
 - Initial state evidence: [Router CLI output](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_rtr_int_02_initial_state_20261028.PNG)
 - Generation-action evidence: [Router CLI Output](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_rtr_int_02_endpoint_test_cli_20261028.PNG)
 - Centralized-log evidence: [Syslog server](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_syslog_server_endpoint_test_20261028.PNG)
+
+## 12. Final Outcome
+
+- Outcome: passed
+- Supporting reasons: log is generated and shown on the syslog server with the expected output for the event.
+- Missing or ambiguous information: User or account that changed the state or reason that interface state was changed
+- Explanation of differences or failures: N/A
+- Follow-up actions: Update the events provisional classification once the team taxonomy is available
+- Completed event catalogue entry: [Event Catalogue Entry](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Documentations/Event_Catalogue/event_evt04_interface_admin_shutdown_20261028.md)
+- Supporting screenshots: [Initial state router CLI output](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_rtr_int_02_initial_state_20261028.PNG), [Generation-action Output](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_rtr_int_02_endpoint_test_cli_20261028.PNG), [Syslog server](https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_2/baseline_verification/test_syslog_server_endpoint_test_20261028.PNG)
