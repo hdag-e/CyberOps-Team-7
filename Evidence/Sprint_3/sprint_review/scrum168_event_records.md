@@ -98,7 +98,7 @@ While standard Cisco IOS generates a global %SYS-5-CONFIG_I syslog message confi
 ## Event 8:
 
 - **Event ID:** EVT-08
-- **Event Name:** Privilege Exec Mode Authentication Failure (`enable` secret)
+- **Event Name:** Log-in Authentication failure and success
 - **Jira Issue:** SCRUM-168
 - **Contributor:** Hasan Dagdelen
 - **Date and Time:** Oct 6 05:25:00.000 (Approx)
