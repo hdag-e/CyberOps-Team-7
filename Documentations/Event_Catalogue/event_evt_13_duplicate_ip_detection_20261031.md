@@ -1,8 +1,8 @@
 # Security Event Record — Duplicate IP Address Detection
 
 - Event ID: EVT-13
-- Jira issue: [SCRUM-40]()
-- Jira Child issue:[SCRUM-169]()
+- Jira issue: [SCRUM-40](https://njit-team-lbmxd47l.atlassian.net/browse/SCRUM-40)
+- Jira Child issue:[SCRUM-169](https://njit-team-lbmxd47l.atlassian.net/browse/SCRUM-169)
 - Contributor: Eric Lindemulder
 - Execution date: 10/30/26
 - Observed event timestamp: 10.06.2026 01:57:48.596 PM
