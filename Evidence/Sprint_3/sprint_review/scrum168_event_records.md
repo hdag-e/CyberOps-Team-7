@@ -93,6 +93,7 @@ Security Property affected: Integrity
 
 ## Limitations
 While standard Cisco IOS generates a global %SYS-5-CONFIG_I syslog message confirming that configuration mode was entered/exited, Packet Tracer does not support advanced CLI command accounting (e.g., archive config or TACACS+ command logging). Consequently, the specific commands executed (such as vlan 999) must be audited manually via show running-config.
+
 ---
 
 ## Event 8:
