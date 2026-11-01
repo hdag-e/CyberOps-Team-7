@@ -1,0 +1,29 @@
+Security Event Record: EVT-05
+Event ID: EVT-05
+Event Name: Device Reload / Cold Start
+Jira Issue: epic 40 subtask 167
+Contributor: Hussein Harb
+Date and Time: 10/30/2026 1pm
+Source Device: RTR-INT-01 (IP: 10.20.50.1)
+Packet Tracer file/version: CYBEROPS07_Configuration_v3_2.pkt (Cisco Packet Tracer)
+Evidence status: Observed
+Generating Action
+Executed the reload command in privileged EXEC mode on the router CLI to trigger a platform reset and reboot cycle.
+Log Appearance
+Plaintext
+10.06.2026 10:29:48.143 AM | 10.20.50.1 | %SYS-3-RESTART: System restarted --
+10.06.2026 10:29:48.143 AM | 10.20.50.1 | %PMAN-5-EXITACTION: Process manager is exiting: platform reset cause = Reload command
+
+Explanation
+Legitimate activity: Planned maintenance, firmware upgrades, hardware reconfiguration, or recovery from an operational configuration lock.
+Malicious activity: Unauthorized physical or remote administrative tampering causing a denial of service via forced device reboots.
+Distinguishing Evidence
+Reviewing pre-restart system logs for crash dumps, checking environmental power metrics, and verifying whether the restart was initiated via an authorized management session or triggered unexpectedly.
+Classification
+Syslog severity, if available: Severity 3 (Error/Restart) and Severity 5 (Notice)
+Assigned analytical severity and rationale: High. A router reboot causes temporary control-plane downtime and breaks active routing adjacencies.
+Analytical question: Was this system restart executed during an approved outage window or did an unexpected fault or unauthorized trigger cause the reload?
+Response category: Immediate action
+Security Property affected: Availability
+Limitations
+The log records the restart trigger cause and system boot timestamp, but it does not capture environmental factors or pre-boot memory corruption states prior to process manager reinitialization.
