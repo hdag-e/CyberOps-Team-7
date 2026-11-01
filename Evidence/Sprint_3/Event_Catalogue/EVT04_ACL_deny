@@ -1,0 +1,45 @@
+Security Event Record: EVT-04
+Event ID: EVT-04
+
+Event Name: Access Control List (ACL) Deny / Packet Filtering Violation
+
+Jira Issue: Epic 40 subtask 167
+
+Contributor: Hussein Harb
+
+Date and Time:10/20/2026 12pm
+
+Source Device: RTR-EDGE-01 / RTR-INT-01
+
+Packet Tracer file/version: CYBEROPS07_Configuration_v3_2.pkt (Cisco Packet Tracer)
+
+Evidence status: Analyzed only (Simulator limitation gap entry)
+
+Generating Action
+Configured an extended ACL rule (deny icmp any any log) on an interface and targeted it with unauthorized ICMP traffic. (Note: Documented analytically due to Cisco Packet Tracer IOS parser firmware restrictions omitting runtime support for the ACL log keyword).
+
+Log Appearance
+Plaintext
+Not achieved due to limitation
+
+Explanation
+Legitimate activity: Misconfigured internal application probes, automated network monitoring tools scanning subnets, or administrative testing.
+
+Malicious activity: Reconnaissance mapping, ping sweeps, or unauthorized hosts attempting to probe internal gateway security perimeters.
+
+Distinguishing Evidence
+Source IP reputation, volume and frequency of denied packets, and whether the traffic originates from known internal subnets versus external untrusted interfaces.
+
+Classification
+Syslog severity, if available: Severity 6 (Informational / Notice)
+
+Assigned analytical severity and rationale: Low. Isolated drops are typical background noise, but dense drop patterns indicate active scanning.
+
+Analytical question: Is this packet filtering drop indicative of routine network noise or a targeted reconnaissance probe against the network perimeter?
+
+Response category: Correlate
+
+Security Property affected: Confidentiality
+
+Limitations
+The expected log captures packet headers and drop actions, but it does not prevent packet transmission, nor does it provide visibility into encrypted payload contents. Furthermore, this specific event relies on analytical documentation due to Packet Tracer firmware parser limitations.
