@@ -1,0 +1,39 @@
+Security Event Record: EVT-01
+Event ID: EVT-01
+Event Name: Interface State Flap (Up/Down)
+Jira Issue: Epic 40: Subtask 167
+Contributor: Hussein Harb
+Date and Time: 10/30/2026 9 am
+Source Device: RTR-INT-01 (IP: 10.20.50.1)
+Packet Tracer file/version: CYBEROPS07_Configuration_v3_2.pkt (Cisco Packet Tracer)
+Evidence status: Observed
+Generating Action
+Executed physical/logical administrative shut and no-shut commands on interface GigabitEthernet0/0/1 (shutdown followed by no shutdown) to trigger a link-state transition.
+Log Appearance
+Plaintext
+10.06.2026 10:29:48.143 AM | 10.20.50.1 | %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+10.06.2026 10:29:48.143 AM | 10.20.50.1 | %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+
+(Original evidence captured and verified on central syslog server SRV-SYSLOG)
+Explanation
+
+Legitimate activity: Routine maintenance, cable replacement, interface troubleshooting, or upstream switch rebooting.
+
+Malicious activity: Physical tampering with network cabling, port disabling attacks, or a denial-of-service condition affecting port availability.
+Distinguishing Evidence
+
+Reviewing physical access logs, change management tickets for scheduled maintenance, or correlation with subsequent rapid up/down cycles that indicate physical port instability or malicious disconnection.
+Classification
+
+Syslog severity, if available: Severity 3 (Error) and Severity 5 (Notice)
+
+Assigned analytical severity and rationale: Low to Medium. Interface flaps are common during maintenance, but unexpected flaps on core trunks disrupt availability.
+
+Analytical question: Was this interface state change preceded by an approved maintenance ticket or triggered by an unexpected physical layer disruption?
+
+Response category: Correlate
+Security Property affected: Availability
+
+Limitations
+The log reports the interface state transition and device timestamp, but it cannot determine whether the disconnection was caused by a pulled cable, hardware failure, or software shutdown command.
+
