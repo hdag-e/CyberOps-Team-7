@@ -46,5 +46,10 @@ Response category: Correlate
 
 Security Property affected: Confidentiality / Integrity
 
+Evidence:
+https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_3/network_evidence/EVT-03_RTR-EDGE-01_Auth_Failure_CLI.png
+https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_3/network_evidence/EVT-03_RTR-EDGE-01_Auth_Failure_Syslog.png
+https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_3/network_evidence/EVT-03_RTR-INT-01_VTY_Login_Failure_Syslog.png
+
 Limitations
 The log records the credential and timestamp, but it does not reveal the physical actor's intent, exact workstation hardware, or whether the attempt was manual or automated.   
