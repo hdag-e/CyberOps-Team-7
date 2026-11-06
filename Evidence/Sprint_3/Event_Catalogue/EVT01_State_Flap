@@ -34,6 +34,12 @@ Analytical question: Was this interface state change preceded by an approved mai
 Response category: Correlate
 Security Property affected: Availability
 
+Evidence:
+https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_3/network_evidence/EVT-01_RTR-INT-01_Interface_Flap_Syslog_1.png
+https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_3/network_evidence/EVT-01_RTR-INT-01_Interface_Flap_Syslog_2.png
+
+
+
 Limitations
 The log reports the interface state transition and device timestamp, but it cannot determine whether the disconnection was caused by a pulled cable, hardware failure, or software shutdown command.
 
