@@ -27,3 +27,8 @@ Response category: Log only
 Security Property affected: Integrity
 Limitations
 The log captures that a configuration session occurred, but standard console logging does not automatically detail which specific command lines or parameters were altered without audit command logging enabled.
+
+Evidence:
+https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_3/network_evidence/EVT-02_RTR-EDGE-01_Config_Event_Syslog.png
+https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_3/network_evidence/EVT-02_RTR-INT-01_Config_And_Login_Success_Syslog.png
+
