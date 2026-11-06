@@ -41,5 +41,8 @@ Response category: Correlate
 
 Security Property affected: Confidentiality
 
+Evidence: 
+None achieved due to Packet Tracer limitation.
+
 Limitations
 The expected log captures packet headers and drop actions, but it does not prevent packet transmission, nor does it provide visibility into encrypted payload contents. Furthermore, this specific event relies on analytical documentation due to Packet Tracer firmware parser limitations.
