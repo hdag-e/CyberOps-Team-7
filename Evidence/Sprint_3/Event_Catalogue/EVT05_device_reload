@@ -16,14 +16,24 @@ Plaintext
 
 Explanation
 Legitimate activity: Planned maintenance, firmware upgrades, hardware reconfiguration, or recovery from an operational configuration lock.
+
 Malicious activity: Unauthorized physical or remote administrative tampering causing a denial of service via forced device reboots.
 Distinguishing Evidence
+
 Reviewing pre-restart system logs for crash dumps, checking environmental power metrics, and verifying whether the restart was initiated via an authorized management session or triggered unexpectedly.
 Classification
+
 Syslog severity, if available: Severity 3 (Error/Restart) and Severity 5 (Notice)
 Assigned analytical severity and rationale: High. A router reboot causes temporary control-plane downtime and breaks active routing adjacencies.
+
 Analytical question: Was this system restart executed during an approved outage window or did an unexpected fault or unauthorized trigger cause the reload?
 Response category: Immediate action
 Security Property affected: Availability
+
+Evidence -
+https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_3/network_evidence/EVT05-RTR-INT01-reload_cli.png
+https://github.com/hdag-e/CyberOps-Team-7/blob/main/Evidence/Sprint_3/network_evidence/EVT05-RTR-INT01-reload_syslog.png
+
+
 Limitations
 The log records the restart trigger cause and system boot timestamp, but it does not capture environmental factors or pre-boot memory corruption states prior to process manager reinitialization.
