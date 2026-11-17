@@ -7,7 +7,7 @@
 | **Scenario Title** | Unauthorized Cross-Zone Probing & Router Control-Plane Compromise |
 | **Stager / Lead** | Analyst Alpha |
 | **Assigned Blind Reconstructor** | Analyst Beta (Hussein — `SCRUM-50`) |
-| **Lab Environment File** | `CYBEROPS07_Configuration_v3_5.pkt` (Isolated Execution Copy) |
+| **Lab Environment File** | `CYBEROPS07_Master_File.pkt` (Isolated Execution Copy) |
 | **Central NTP & Syslog Server** | `SRV-NTP` / `SRV-SYSLOG` (`10.20.50.10`) |
 
 ---
